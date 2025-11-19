@@ -1,6 +1,7 @@
 # **Welcome\!**
 
-This is a documentation for my custom audio scripts for Unity’s native audio system. If you have any questions, reach out to jamieleesounds@gmail.com. Download the scripts **[here](https://github.com/PlumJam67/UnityAudioScripts.git)**. Download the pdf document for instruction with photos. 
+This is a documentation for my custom audio scripts for Unity’s native audio system. If you have any questions, reach out to jamieleesounds@gmail.com. Download the pdf document for instruction with photos. 
+Feel free to use the scripts for your personal project, but you're not allowed to use these in any commercial projects. If you end up publishing your project, please credit Jamie Lee with this github page URL. Thank you! 
 
 ## **Overview**
 
