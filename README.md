@@ -1,18 +1,18 @@
 # **Welcome\!**
 
 This is a documentation for my custom audio scripts for Unity’s native audio system. If you have any questions, reach out to jamieleesounds@gmail.com. Download the pdf document for instruction with photos. 
-Feel free to use the scripts for your personal project, but you're not allowed to use these in any commercial projects. If you end up publishing your project, please credit Jamie Lee with this github page URL. Thank you! 
+Feel free to use the scripts for your personal projects, but you're not allowed to use these in any commercial projects. If you end up publishing your projects, please credit Jamie Lee with this github page URL. Thank you! 
 
 ## **Overview**
 
-Audio Event and Audio Cue are designed for two common ways of handling audio in Unity. The first one is a **prefab-based** approach using Audio Event. A **prefab-based** approach allows audio events to organize under the game object hierarchy it’s working with. This way, you can change and test values directly within the game object hierarchy. It also uses a monobehavior class which has useful methods for processing effects in real time. The downside is that Audio Event objects are only available within a scene and always have to live under the game object. This means the more complicated a scene is, the deeper you will have to keep track of where the Audio Event objects live.
+**Audio Event** and **Audio Cue** are designed for two common ways of handling audio in Unity. The first one is a **prefab-based** approach using Audio Event. A **prefab-based** approach allows audio events to organize under the game object hierarchy it’s working with. This way, you can change and test values directly within the game object hierarchy. It also uses a monobehavior class which has useful methods for processing effects in real time. The downside is that Audio Event objects are only available within a scene and always have to live under the game object. This means the more complicated a scene is, the deeper you will have to keep track of where the Audio Event objects live.
 
-The second way of handling audio is through Unity’s **Scriptable Object** class. Scriptable objects are data/method containers that persist throughout the project. The biggest benefit of using scriptable objects is to have a better organization system and workflow for audio designers. Once you set up the script to play an **AudioCue** scriptable object, you can make design changes within the AudioCue asset instead of in the game object hierarchy. The down side is it’s a bit more work to set up the AudioCue assets and audio files separately and sometimes it can be an overkill for smaller projects.  
+The second way of handling audio is through Unity’s **Scriptable Object** class. Scriptable objects are data/method containers that persist throughout the project. The biggest benefit of using scriptable objects is to have a better organization system and workflow for audio designers. Once you set up the script to play an Audio Cue scriptable object, you can make design changes within the AudioCue asset instead of in the game object hierarchy. The down side is it’s a bit more work to set up the Audio Cue assets and audio files separately and sometimes it can be an overkill for smaller projects.  
 
 ## **So which one should I use?**
 
-- Use **AudioEvent** if you’re building smaller prototypes or have a feature that needs to be modified during runtime.  
-- Use **AudioCue** if you want dedicated organization for audio assets and easier editing throughout the project instead of scene-dependent.
+- Use **Audio Event** if you’re building smaller prototypes or have a feature that needs to be modified during runtime.  
+- Use **Audio Cue** if you want dedicated organization for audio assets and easier editing throughout the project instead of scene-dependent.
 
 ---
 
@@ -20,7 +20,7 @@ The second way of handling audio is through Unity’s **Scriptable Object** clas
 
 ## **Overview**
 
-Audio Event is designed to build a prefab-based audio system. Load **AudioEvent.cs** script in your project and attach to corresponding game objects. It will populate [Unity’s Audio Source](https://docs.unity3d.com/6000.2/Documentation/Manual/class-AudioSource.html) and override Audio Source settings. It also has custom features, such as **different play types**, **randomizing start point**, **random pitch and volume, fade in**, and **low pass filter** effects. When not sure about any features, hover over the text and it will show help messages. 
+**Audio Event** is designed to build a prefab-based audio system. Load **AudioEvent.cs** script in your project and attach to corresponding game objects. It will populate [Unity’s Audio Source](https://docs.unity3d.com/6000.2/Documentation/Manual/class-AudioSource.html) and override Audio Source settings. It also has custom features, such as **different play types**, **randomizing start point**, **random pitch and volume, fade in**, and **low pass filter** effects. When not sure about any features, hover over the text and it will show help messages. 
 
 ## **How to use Audio Event** 
 
